@@ -36,12 +36,12 @@ function TopBackground({ filters, onRemoveFilter, onHandleResetFilter }) {
     <div className="top-background">
       <picture>
         <source
-          srcSet="./src/images/bg-header-desktop.svg"
+          srcSet="/images/bg-header-desktop.svg"
           media="(min-width: 375px)"
         />
 
         <img
-          src="./src/images/bg-header-mobile.svg"
+          src="/images/bg-header-mobile.svg"
           alt="Description of the image"
         />
       </picture>
@@ -57,7 +57,7 @@ function TopBackground({ filters, onRemoveFilter, onHandleResetFilter }) {
                 <span className="filter-name">{filter}</span>{" "}
                 <button onClick={() => onRemoveFilter(filter)}>
                   {" "}
-                  <img src="./src/images/icon-remove.svg" alt="" />{" "}
+                  <img src="/images/icon-remove.svg" alt="" />{" "}
                 </button>
               </span>
             );
